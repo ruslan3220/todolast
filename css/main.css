@@ -1,0 +1,11 @@
+.checkbox__todo:checked + .todo__text {
+  text-decoration: line-through;
+}
+.todo__item {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 450px;
+}

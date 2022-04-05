@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5 mb-5">TODO KIRITING</h1>
+      <form class="todo__form text-center">
+        <input
+          type="text"
+          class="todo__input mx-3"
+          placeholder="type..."
+          required
+        />
+        <button class="todo__submit-btn btn btn-danger" type="submit">
+          ADD
+        </button>
+      </form>
+      <ul class="todo__list text-center list-inline">
+        <li class="todo__item d-flex">
+          <input class="checkbox__todo" type="checkbox" />
+          <span class="todo__text">Run</span>
+          <button class="todo__del-btn" type="button">Delete</button>
+        </li>
+      </ul>
+      <div class="todo__controls text-center">
+        <button class="btnAll">All <strong class="allCount">0</strong></button>
+        <button class="btnCompleted">
+          Completed <strong class="completedCount">0</strong>
+        </button>
+        <button class="btnUncompleted">
+          Uncompleted <strong class="uncompletedCount">0</strong>
+        </button>
+      </div>
+    </div>
+    <template id="todo_item_template">
+      <li class="todo__item">
+        <input class="checkbox__todo" type="checkbox" />
+        <span class="todo__text">Run</span>
+        <button class="todo__del-btn" type="button">Delete</button>
+      </li>
+    </template>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
